@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main-content {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+
+
+}
+
+/* staff card */
+
+.card {
+    margin: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       
+}
+
+.card>img {
+    
+    max-width: 200px;
+    
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* media tablet*/
+@media (max-width: 800px) {
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+        
+        grid-template-rows: repeat(5, 300px)
+    }
+}
+
+/* media smartphone */
+@media (max-width: 600px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+        
+        grid-template-rows: repeat(9, 300px)
+    }
+    .card {
+        margin-inline: 0;
+    }
+}
+
+
