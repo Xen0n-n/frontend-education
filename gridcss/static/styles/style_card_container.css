@@ -5,44 +5,67 @@
 
 
 
+
+
+
+
+/* main content */
+
 .main-content {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 300px);
-
-
+    grid-template-rows: repeat(3, 600px);
+    
+    
 }
 
 /* staff card */
 
 .card {
-    margin: 4em;
     display: flex;
+    gap: 10px;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-       
+    padding: 10px;
+    font-size: 30px;
 }
 
-.card>img {
-    
-    max-width: 200px;
+.product-image-link {
+    display: flex;
+    object-fit: contain;
+    overflow: hidden;
+    justify-content: center;
     
 }
+
+.product-image-link img {
+    max-width: 100%;
+
+    
+    
+
+    
+
+}
+
 
 .card-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 
 /* media tablet*/
 @media (max-width: 800px) {
+    
     .main-content {
         grid-template-columns: repeat(2, 1fr);
         
-        grid-template-rows: repeat(5, 300px)
+        grid-template-rows: repeat(5, 300px);
+        padding-inline: 0;
     }
 }
 
@@ -51,7 +74,9 @@
     .main-content {
         grid-template-columns: repeat(1, 1fr);
         
-        grid-template-rows: repeat(9, 300px)
+        grid-template-rows: repeat(9, 300px);
+
+        padding-inline: 0;
     }
     .card {
         margin-inline: 0;
