@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
+    background-color: blue;
 }
 
 .left-bar {
@@ -17,4 +18,50 @@
 .right-bar {
     grid-column: 11/13;
 
+}
+
+.left-bar p, .right-bar p{
+    margin: 1em;
+    padding: 1em;
+    padding-bottom: 1em;
+    border: 2px solid rgb(103, 146, 187);
+    color: aquamarine;
+}
+
+@media (max-width: 800px) {
+    
+    .main-container {
+
+        grid-template-rows: repeat(3);
+        
+    }
+    .left-bar {
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
+    
+    .main-content {
+        grid-column: 1/13;
+        grid-row: 2/3;
+    
+    }
+    
+    .right-bar {
+        grid-column: 1/13;
+        grid-row: 3/4;
+    }
+}
+
+/* media smartphone */
+@media (max-width: 600px) {
+    .main-container {
+        grid-template-columns: repeat(1);
+        
+        grid-template-rows: repeat(3);
+
+        padding-inline: 0;
+    }
+    .card {
+        margin-inline: 0;
+    }
 }
