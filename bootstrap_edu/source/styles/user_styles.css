@@ -1,12 +1,20 @@
 .nav-link {
     color: azure;
 }
+
 .navbar-nav .nav-link.active {
     color: rgb(95, 185, 221);
 }
+
 .navbar-brand img {
     width: 80px;
 }
+
 .navbar-toggler {
     background-color: rgb(130, 130, 130);
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
 }
