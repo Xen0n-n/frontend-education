@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
-    background-color: blue;
+    background-color: rgb(97, 152, 230);
 }
 
 .left-bar {

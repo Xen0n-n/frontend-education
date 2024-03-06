@@ -1,0 +1,56 @@
+.nav_bar {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav_list a:hover {
+    background-color: rgb(115, 115, 115);
+
+}
+
+.nav_btn {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .nav_btn {
+        display: block;
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 2px;
+        border: none;
+        background-color: rgb(45, 45, 45);
+        cursor: pointer;
+    }
+
+    .nav_list{
+        display: none;
+    }
+
+    .nav_btn:hover {
+        background-color: rgb(115, 115, 115);
+    }
+    
+    .drop:hover .nav_list {
+        display: block;
+        position: absolute;
+        background-color: black;
+    }
+
+
+}
