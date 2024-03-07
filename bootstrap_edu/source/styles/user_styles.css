@@ -1,11 +1,5 @@
-header {
-    display: block;
-    
-}
-
 section {
     background: linear-gradient(0deg, #cbcfe4 47%, #ffffff 100%);
-    
 }
 
 .nav-link {
@@ -26,7 +20,7 @@ section {
 
 .card {
     margin-bottom: 2em;
-    padding: 10px;   
+    padding: 10px;
 }
 
 .card.right-bar-card {
@@ -38,7 +32,17 @@ section {
     font-family: "Secular One", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
 
+footer {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    background-color: rgb(60, 60, 60);
+    padding: 1em;
+}
 
+footer p{
+    margin-bottom: 0;
+    color: azure;
+}
