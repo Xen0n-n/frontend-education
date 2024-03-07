@@ -1,5 +1,6 @@
 section {
     background: linear-gradient(0deg, #cbcfe4 47%, #ffffff 100%);
+    
 }
 
 .nav-link {
@@ -19,13 +20,14 @@ section {
 }
 
 .card {
-    margin-top: 2em;
+    margin-bottom: 2em;
     padding: 10px;
     width: 20em;    
 }
 
 .card.right-bar-card {
     width: auto;
+    margin: 2em;
 }
 
 .secular-one-regular {
