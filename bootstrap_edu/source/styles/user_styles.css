@@ -2,6 +2,17 @@ section {
     background: linear-gradient(0deg, #cbcfe4 47%, #ffffff 100%);
 }
 
+.carousel {
+    width: 60%;
+    border: 3px solid;
+    margin: 1em;
+}
+
+.slide-text {
+    color: darkblue;
+    margin: auto auto;
+}
+
 .nav-link {
     color: azure;
 }
@@ -26,6 +37,7 @@ section {
 .card.right-bar-card {
     width: auto;
     margin: 2em;
+    border: 3px solid;
 }
 
 .secular-one-regular {
