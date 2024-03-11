@@ -1,3 +1,8 @@
+header {
+    box-sizing: border-box;
+}
+
+
 section {
     background: linear-gradient(0deg, #cbcfe4 47%, #ffffff 100%);
 }
@@ -12,6 +17,8 @@ section {
     color: darkblue;
     margin: auto auto;
 }
+
+
 
 .nav-link {
     color: azure;
@@ -37,13 +44,28 @@ section {
 .card.right-bar-card {
     width: auto;
     margin: 2em;
-    border: 3px solid;
+    border: none;
 }
 
 .secular-one-regular {
     font-family: "Secular One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.contacts-info .row>img {
+    max-width: 6em;
+    
+}
+
+.contacts-info .row {
+    flex-wrap: nowrap;
+    margin: 1em;
+}
+.contacts-info .row>p {
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
 
 footer {
@@ -57,4 +79,12 @@ footer {
 footer p{
     margin-bottom: 0;
     color: azure;
+}
+
+
+
+@media(max-width:755px) {
+    .carousel-indicators {
+        display: none;
+    }
 }
